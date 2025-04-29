@@ -194,7 +194,6 @@ public class ConnectorOptionCheckTest {
         whiteList.add("TypesenseSinkOptions");
         whiteList.add("PulsarSinkOptions");
         whiteList.add("SlsSinkOptions");
-        whiteList.add("Neo4jSinkOptions");
         whiteList.add("PulsarSourceOptions");
         whiteList.add("MongodbSinkOptions");
         whiteList.add("SlsSourceOptions");
@@ -205,7 +204,6 @@ public class ConnectorOptionCheckTest {
         whiteList.add("RocketMqSourceOptions");
         whiteList.add("TablestoreSinkOptions");
         whiteList.add("TableStoreDBSourceOptions");
-        whiteList.add("Neo4jSourceOptions");
         whiteList.add("SocketSourceOptions");
         whiteList.add("PostgresIncrementalSourceOptions");
         whiteList.add("SqlServerIncrementalSourceOptions");
