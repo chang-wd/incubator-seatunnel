@@ -15,17 +15,16 @@
  * limitations under the License.
  */
 
-package org.apache.seatunnel.connectors.seatunnel.tablestore;
+package org.apache.seatunnel.connectors.seatunnel.tablestore.config;
 
-import org.apache.seatunnel.connectors.seatunnel.tablestore.sink.TablestoreSinkFactory;
+import org.apache.seatunnel.api.configuration.Option;
+import org.apache.seatunnel.api.configuration.Options;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+public class TableStoreSinkOptions extends TableStoreCommonOptions {
 
-class TablestoreFactoryTest {
-
-    @Test
-    void optionRule() {
-        Assertions.assertNotNull((new TablestoreSinkFactory()).optionRule());
-    }
+    public static final Option<Integer> BATCH_SIZE =
+            Options.key("batch_size")
+                    .intType()
+                    .defaultValue(25)
+                    .withDescription(" Tablestore batch_size");
 }

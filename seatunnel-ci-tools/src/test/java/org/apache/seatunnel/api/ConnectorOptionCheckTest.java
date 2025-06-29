@@ -194,8 +194,6 @@ public class ConnectorOptionCheckTest {
         whiteList.add("TypesenseSinkOptions");
         whiteList.add("MongodbSinkOptions");
         whiteList.add("SelectDBSinkOptions");
-        whiteList.add("TablestoreSinkOptions");
-        whiteList.add("TableStoreDBSourceOptions");
         whiteList.add("PostgresIncrementalSourceOptions");
         whiteList.add("SqlServerIncrementalSourceOptions");
         whiteList.add("OracleIncrementalSourceOptions");
